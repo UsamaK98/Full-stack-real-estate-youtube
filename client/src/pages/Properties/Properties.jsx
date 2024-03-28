@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import SearchBar from "../../components/SearchBar/SearchBar";
 import "./Properties.css";
 import useProperties from "../../hooks/useProperties";
 import { PuffLoader } from "react-spinners";
@@ -31,7 +30,6 @@ const Properties = () => {
   return (
     <div className="wrapper">
       <div className="flexColCenter paddings innerWidth properties-container">
-        <SearchBar filter={filter} setFilter={setFilter} />
 
         <div className="paddings flexCenter properties">
           {
